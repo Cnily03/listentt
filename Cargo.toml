@@ -1,0 +1,13 @@
+[package]
+name = "listentt"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+opt-level = "s"  # 优化体积
+lto = true       # 整体优化
+debug = false    # 移除调试信息
