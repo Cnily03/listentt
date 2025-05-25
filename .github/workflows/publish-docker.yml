@@ -10,6 +10,10 @@ on:
       tag:
         description: "Tag (verison) to build"
 
+permissions:
+  contents: read
+  packages: write
+
 env:
   REGISTRY_IMAGE: ghcr.io/cnily03/listentt
 
